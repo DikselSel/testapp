@@ -1,0 +1,21 @@
+{%extends "base.html"%}
+{% load static %}
+    
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{%static 'css/sposoby.css'%}">
+<title>Sposoby</title>
+{% endblock %}
+
+
+
+{% block body %}
+<div class="container">
+    {%for sposob in sposoby%}
+    <div class="card">
+        <h1>{{sposob.nazwaSposobu}}</h1>
+        <hr class="line">
+        <p>{{sposob.opisSposobu}}</p>
+    </div>
+    {%endfor%}
+</div>
+{% endblock %}

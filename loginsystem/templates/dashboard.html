@@ -1,0 +1,26 @@
+{%extends "base.html"%}
+
+{%load static%}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{%static 'css/dashboard.css' %}"/>
+<title>Witaj w Domku</title>
+{% endblock %}
+
+
+{% block body %}
+    <div class="container">
+
+        {%for post in posts%}
+        <div class="postcard">
+            <div class="title">
+                <h1>{{post.title}}</h1>
+            </div>
+            <hr class="line">
+            <div class="description">
+                <p>{{post.description}}</p>
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+{% endblock %}

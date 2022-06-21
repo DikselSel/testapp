@@ -1,0 +1,38 @@
+{%extends "base.html"%}
+{% load static %}
+    
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{%static 'css/napisz.css'%}">
+<title>Napisz</title>
+{% endblock %}
+
+
+
+{% block body %}
+<div class="container">
+    <div class="buttonholder">
+        <a href="{%url 'napiszCreate'%}" class="btn"><i class="fa-solid fa-plus"></i></a>
+    </div>
+
+    {%for this in stworzone%}
+
+    <div class="this">
+        
+
+        <h1>{{this.tytul}}</h1>
+        <div class="updateDelete">
+            <a href="{%url 'napiszUpdate' this.id%}" class="btn" id="edit">Edytuj</a>
+            <a href="{%url 'napiszDelete' this.id%}" class="btn" id="edit">Usuń</a>
+        </div>
+        <p>{{this.wykonanie}}</p>
+        {%if this.finished is True%}
+        <p style="color:green;">Dokończone</p>
+        {%elif this.finished is False%}
+        <p style="color:red;">Nie dokończone</p>
+        {%endif%}
+    </div>
+
+    {%endfor%}
+
+</div>
+{% endblock %}

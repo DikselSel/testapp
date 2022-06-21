@@ -1,0 +1,28 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/navbar.css' %}"/>
+    {%block head%}{%endblock%}
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Pomagamy<span>Sobie</span></h1>
+        </div>
+
+        <ul class="options">
+            <li><a href="{%url 'dashboard'%}"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="{%url 'napisz'%}"><i class="fa-solid fa-pen"></i></a></li>
+            <li><a href="{%url 'sposoby'%}"><i class="fa-solid fa-list"></i></a></li>
+            <li><a href="{%url 'home'%}"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+        </ul>
+    </nav>
+    {%block body%}{%endblock%}
+</body>
+</html>

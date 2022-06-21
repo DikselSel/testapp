@@ -1,0 +1,59 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0; 
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* ===================CONTAINER============================*/
+.container {
+    margin-top: 200px;
+}
+
+.postcard{
+    
+    display: flex;
+    flex-direction: column;
+    
+    width: 400px;
+    padding: 20px;
+
+    border: 3px solid #CDB4DB;
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+     
+}
+
+.title{
+
+}
+/* ===================*/
+.title h1{
+    font-size: 1.6rem;
+    text-align: center;
+
+}
+
+.line{
+    width: 300px;
+    background: none;
+    border: 2px solid #CDB4DB; 
+    border-radius: 10px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+/* ===================*/
+.description p{
+
+    font-size: 0.9rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+

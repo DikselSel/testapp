@@ -1,0 +1,53 @@
+.navbar{
+    background: #CDB4DB;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    height: 50px;
+    position: fixed;
+    border-radius: 0px 0px 30px 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.logo h1{
+    color: #fff;
+    padding-left: 30px;
+}
+
+
+
+.options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    width: 50vw;
+    
+}
+
+.options li{
+    padding-right: 20px;
+    margin-left: 10px;
+    display: inline;
+}
+
+.options li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.options li a:hover{
+    color: #FFC8DD;
+}
+
